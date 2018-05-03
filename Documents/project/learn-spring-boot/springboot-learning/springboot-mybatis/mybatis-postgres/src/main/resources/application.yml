@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/helloword
+    password: 123456
+    username: postgres
+
+mapper:
+  mappers: org.yee.springboot.mybatis.postgres.dao.uitl.MyMapper
+  not-empty: true
+  identity: POSTGRE
+
+pagehelper:
+  auto-dialect: postgre
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+

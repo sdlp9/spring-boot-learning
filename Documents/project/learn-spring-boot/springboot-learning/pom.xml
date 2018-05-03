@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>springboot-learning</name>
+    <description>Spring Boot Learning</description>
+    <url>https://github.com/huangwenhuai/spring-boot-learning</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>bruceWong</name>
+            <email>6193855@qq.com</email>
+            <url>https://github.com/huangwenhuai</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/huangwenhuai/spring-boot-learning</connection>
+        <developerConnection>scm:git:https://github.com/huangwenhuai/spring-boot-learning</developerConnection>
+        <url>https://github.com/huangwenhuai/spring-boot-learning</url>
+    </scm>
+
+    <groupId>org.yee.learning.springboot</groupId>
+    <artifactId>springboot-learning</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <modules>
+        <module>springboot-demo</module>
+        <module>springboot-mybatis</module>
+        <module>springboot-cache</module>
+        <module>springboot-permission</module>
+        <module>springboot-permission</module>
+        <module>springboot-common</module>
+        <module>springboot-log</module>
+        <module>springboot-quartz</module>
+        <module>springboot-swagger</module>
+        <module>springboot-mq</module>
+        <module>springboot-annotation</module>
+        <module>springboot-thread</module>
+        <module>springboot-filehanding</module>
+        <module>springboot-security</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>1.5.9.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
